@@ -67,7 +67,7 @@ def run(summ_path,
         print("Running ROUGE...")
         log_level = logging.ERROR if not verbose else None
         r = pyrouge.Rouge155(rouge_dir=os.path.dirname(s.data['ROUGE_path']),
-                             log_level=log_level,
+                             #log_level=log_level,
                              stemming=stemming)
         r.system_dir = sys_root
         r.model_dir = model_root
